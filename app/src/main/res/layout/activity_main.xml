@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello World, Driver!"
+                />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Connect"
+                android:id="@+id/connect_button" android:layout_gravity="center_horizontal" android:textStyle="bold"/>
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Print all charsets!"
+                android:id="@+id/charsets_checkbox" android:layout_gravity="center_horizontal"/>
+            <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Charset(s) print"
+                android:id="@+id/charset_button" android:layout_gravity="center_horizontal"/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/text_edit_text"
+                android:layout_gravity="center_horizontal" android:text="Test"/>
+            <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Text print"
+                android:id="@+id/text_print_button" android:layout_gravity="center_horizontal"/>
+            <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Text premutations print"
+                android:id="@+id/text_permutations_print_button" android:layout_gravity="center_horizontal"
+                android:textStyle="bold|italic"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/qr_text" android:layout_gravity="center_horizontal"
+                android:text="http://www.istratech.hr/"/>
+            <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Qr print"
+                android:id="@+id/qr_print_button" android:layout_gravity="center_horizontal"/>
+            <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Qr permutations print"
+                android:id="@+id/qr_premutations_print_button" android:layout_gravity="center_horizontal"
+                android:textStyle="bold|italic"/>
+            <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Close"
+                android:id="@+id/close_button" android:layout_gravity="center_horizontal" android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
